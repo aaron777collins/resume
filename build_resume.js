@@ -132,7 +132,9 @@ const doc = new Document({
         "Project SME & Core Contributor to the Ad Diagnostic tool MVP (identifying why configured ads do not serve), designed to significantly reduce troubleshooting time and help advertisers get campaigns live faster."
       ]),
       bullet([
-        "Selected as AI Champion by senior leadership: driving AI adoption, onboarding engineers to AI tooling and workflows, and tracking cross-org AI initiatives. Measured via dedicated OKR."
+        "Selected as ",
+        { text: "AI Champion", bold: true },
+        " by senior leadership: driving AI adoption, onboarding engineers to AI tooling and workflows, and tracking cross-org AI initiatives. Measured via dedicated OKR."
       ]),
 
       // -- SDE II --
