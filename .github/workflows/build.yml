@@ -1,0 +1,69 @@
+name: Build & Deploy Resume
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install npm deps
+        run: npm install
+
+      - name: Build .docx
+        run: npm run build
+
+      - name: Install LibreOffice
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libreoffice-writer
+
+      - name: Convert .docx -> .pdf
+        run: |
+          libreoffice --headless --convert-to pdf Resume_Aaron_Collins.docx
+          ls -la Resume_Aaron_Collins.pdf
+
+      - name: Assemble _site
+        run: |
+          mkdir -p _site/pdfjs
+          cp index.html _site/
+          cp Resume_Aaron_Collins.pdf _site/
+          cp Resume_Aaron_Collins.docx _site/
+          cp -r node_modules/pdfjs-dist/web   _site/pdfjs/web
+          cp -r node_modules/pdfjs-dist/build _site/pdfjs/build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

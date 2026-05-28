@@ -1,1 +1,17 @@
-{"name":"resume-generator","version":"1.0.0","description":"Generates Aaron Collins resume as a .docx file using docx-js","main":"build_resume.js","scripts":{"build":"node build_resume.js"},"dependencies":{"docx":"^9.0.0"},"author":"Aaron Collins","license":"MIT"}
+{
+  "name": "resume-generator",
+  "version": "1.0.0",
+  "description": "Generates Aaron Collins resume as a .docx file using docx-js",
+  "main": "build_resume.js",
+  "scripts": {
+    "build": "node build_resume.js"
+  },
+  "dependencies": {
+    "docx": "^9.0.0"
+  },
+  "devDependencies": {
+    "pdfjs-dist": "^4.10.38"
+  },
+  "author": "Aaron Collins",
+  "license": "MIT"
+}
