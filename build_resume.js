@@ -126,7 +126,9 @@ const doc = new Document({
       bullet([
         "Retail Media / Onsite Ads / Activation SME: Drive major re-architecture of ad approval systems to improve configuration flexibility. Own Ads Activation (",
         { text: "ad validation and delivery push", bold: true },
-        ") pipelines. Collaborate cross-team for ad delivery workflows (C#/.NET 10, Angular)."
+        ") pipelines. Collaborate cross-team for ad delivery workflows (",
+        { text: "C#/.NET 10, Angular", bold: true },
+        ")."
       ]),
       bullet([
         "Project SME & Core Contributor to the Ad Diagnostic tool MVP (identifying why configured ads do not serve), designed to significantly reduce troubleshooting time and help advertisers get campaigns live faster."
@@ -143,7 +145,9 @@ const doc = new Document({
       bullet([
         "Retail Media / Onsite Ads / Fullstack Engineering Project SME: Led major overhaul of Ads Forecasting (",
         { text: "ad delivery demand prediction", bold: true },
-        ") system and built new modules that significantly improved forecast accuracy. Owned pipeline, backend infrastructure, and business requirements implementation. Collaborated cross-team for ad approval workflows (C#/.NET 8-10, Angular)."
+        ") system and built new modules that significantly improved forecast accuracy. Owned pipeline, backend infrastructure, and business requirements implementation. Collaborated cross-team for ad approval workflows (",
+        { text: "C#/.NET 8-10, Angular", bold: true },
+        ")."
       ]),
       bullet([
         "Owned full project lifecycles from architecture through delivery, driving measurable business impact across cross-domain Onsite Ads initiatives."
@@ -163,7 +167,9 @@ const doc = new Document({
       titleLine("Software Development Engineer"),
       companyDateLine("Criteo", "Ann Arbor, MI", "Oct 2023 - Oct 2024"),
       bullet([
-        "Delivered high-value Onsite Display Ads features including UserNotification, Auction BuyType (auction-based bidding for display line items), and Max Scale (multi-creative support, expanded configuration). Drove strong stakeholder engagement (C#/.NET 6-8, Angular)."
+        "Delivered high-value Onsite Display Ads features including UserNotification, Auction BuyType (auction-based bidding for display line items), and Max Scale (multi-creative support, expanded configuration). Drove strong stakeholder engagement (",
+        { text: "C#/.NET 6-8, Angular", bold: true },
+        ")."
       ]),
       bullet([
         "Resolved critical production bugs with potential for significant financial impact across ad serving systems."
