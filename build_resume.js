@@ -120,9 +120,24 @@ const doc = new Document({
       // ═══ EXPERIENCE ═══
       sectionHeading("Experience"),
 
+      // -- Senior SDE --
+      titleLine("Senior Software Development Engineer"),
+      companyDateLine("Criteo", "Ann Arbor, MI", "Apr 2026 - Present"),
+      bullet([
+        "Retail Media / Onsite Ads / Activation SME: Driving major re-architecture of ad approval systems to improve configuration flexibility. Own Ads \"Activation\" (",
+        { text: "ad validation and delivery push", bold: true },
+        ") pipelines, backend, and UI. Collaborate cross-team for ad delivery workflows (C#/.NET 10, Angular)."
+      ]),
+      bullet([
+        "Project SME and core contributor to the Ad Diagnostic tool MVP (identifying why configured ads do not serve), designed to significantly reduce troubleshooting time and help advertisers get campaigns live faster."
+      ]),
+      bullet([
+        "Selected as AI Champion by senior leadership: driving AI adoption, onboarding engineers to AI tooling and workflows, and tracking cross-org AI initiatives. Measured via dedicated OKR."
+      ]),
+
       // -- SDE II --
       titleLine("Software Development Engineer II"),
-      companyDateLine("Criteo", "Ann Arbor, MI", "Oct 2024 - Present"),
+      companyDateLine("Criteo", "Ann Arbor, MI", "Oct 2024 - Apr 2026"),
       bullet([
         "Retail Media / Onsite Ads / Fullstack Engineering Project SME: Led major overhaul of Ads \"Forecasting\" (",
         { text: "ad delivery demand prediction", bold: true },
@@ -130,9 +145,6 @@ const doc = new Document({
       ]),
       bullet([
         "Owned full project lifecycles from architecture through delivery, driving measurable business impact across cross-domain Onsite Ads initiatives."
-      ]),
-      bullet([
-        "Selected as AI Champion by senior leadership: driving AI adoption, onboarding engineers to AI tooling and workflows, and tracking cross-org AI initiatives. Measured via dedicated OKR."
       ]),
       bullet([
         "Built ",
