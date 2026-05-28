@@ -124,12 +124,12 @@ const doc = new Document({
       titleLine("Senior Software Development Engineer"),
       companyDateLine("Criteo", "Ann Arbor, MI", "Apr 2026 - Present"),
       bullet([
-        "Retail Media / Onsite Ads / Activation SME: Driving major re-architecture of ad approval systems to improve configuration flexibility. Own Ads \"Activation\" (",
+        "Retail Media / Onsite Ads / Activation SME: Drive major re-architecture of ad approval systems to improve configuration flexibility. Own Ads \"Activation\" (",
         { text: "ad validation and delivery push", bold: true },
-        ") pipelines, backend, and UI. Collaborate cross-team for ad delivery workflows (C#/.NET 10, Angular)."
+        ") pipelines. Collaborate cross-team for ad delivery workflows (C#/.NET 10, Angular)."
       ]),
       bullet([
-        "Project SME and core contributor to the Ad Diagnostic tool MVP (identifying why configured ads do not serve), designed to significantly reduce troubleshooting time and help advertisers get campaigns live faster."
+        "Project SME & Core Contributor to the Ad Diagnostic tool MVP (identifying why configured ads do not serve), designed to significantly reduce troubleshooting time and help advertisers get campaigns live faster."
       ]),
       bullet([
         "Selected as AI Champion by senior leadership: driving AI adoption, onboarding engineers to AI tooling and workflows, and tracking cross-org AI initiatives. Measured via dedicated OKR."
