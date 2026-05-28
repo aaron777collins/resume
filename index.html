@@ -3,72 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>Aaron Collins - Resume</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<style>
-  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #2a2a2e; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
-  #loader {
-    position: fixed; inset: 0; z-index: 10;
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    background: #2a2a2e; color: #e6e6e6;
-    transition: opacity 0.35s ease-out;
-  }
-  #loader.hidden { opacity: 0; pointer-events: none; }
-  .spinner {
-    width: 52px; height: 52px;
-    border: 3px solid rgba(255,255,255,0.12);
-    border-top-color: #4ea1ff;
-    border-radius: 50%;
-    animation: spin 0.85s linear infinite;
-  }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .label { margin-top: 1.25rem; font-size: 0.95rem; letter-spacing: 0.02em; opacity: 0.8; }
-  .name  { margin-top: 0.35rem; font-size: 0.78rem; opacity: 0.45; }
-  .fallback {
-    margin-top: 2.25rem; font-size: 0.78rem; opacity: 0;
-    animation: fadein 0.4s ease-out 4s forwards;
-  }
-  .fallback a { color: #4ea1ff; text-decoration: none; }
-  .fallback a:hover { text-decoration: underline; }
-  @keyframes fadein { to { opacity: 0.55; } }
-  iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; }
-</style>
+<meta http-equiv="refresh" content="0; url=Resume_Aaron_Collins.pdf">
+<link rel="canonical" href="Resume_Aaron_Collins.pdf">
+<script>window.location.replace("Resume_Aaron_Collins.pdf");</script>
 </head>
 <body>
-  <div id="loader">
-    <div class="spinner" aria-hidden="true"></div>
-    <div class="label">Loading resume</div>
-    <div class="name">Aaron Collins</div>
-    <div class="fallback">Taking a while? <a href="Resume_Aaron_Collins.pdf">Download the PDF directly</a></div>
-  </div>
-  <iframe
-    id="viewer"
-    src="pdfjs/web/viewer.html?file=../../Resume_Aaron_Collins.pdf"
-    title="Aaron Collins - Resume"></iframe>
-  <script>
-    const loader = document.getElementById('loader');
-    const iframe = document.getElementById('viewer');
-    let hidden = false;
-    const hide = () => {
-      if (hidden) return;
-      hidden = true;
-      loader.classList.add('hidden');
-      setTimeout(() => loader.remove(), 400);
-    };
-    iframe.addEventListener('load', () => {
-      try {
-        const app = iframe.contentWindow.PDFViewerApplication;
-        if (app && app.initializedPromise) {
-          app.initializedPromise
-            .then(() => app.eventBus.on('pagerendered', hide))
-            .catch(hide);
-        } else {
-          setTimeout(hide, 300);
-        }
-      } catch (_) {
-        setTimeout(hide, 300);
-      }
-    });
-    setTimeout(hide, 8000);
-  </script>
+<p>Redirecting to <a href="Resume_Aaron_Collins.pdf">Resume_Aaron_Collins.pdf</a>&hellip;</p>
 </body>
 </html>
