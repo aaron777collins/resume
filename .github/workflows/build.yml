@@ -43,14 +43,21 @@ jobs:
           libreoffice --headless --convert-to pdf Resume_Aaron_Collins.docx
           ls -la Resume_Aaron_Collins.pdf
 
+      - name: Download PDF.js prebuilt viewer
+        env:
+          PDFJS_VERSION: 5.7.284
+        run: |
+          curl -fsSL "https://github.com/mozilla/pdf.js/releases/download/v${PDFJS_VERSION}/pdfjs-${PDFJS_VERSION}-legacy-dist.zip" -o /tmp/pdfjs.zip
+          mkdir -p _site/pdfjs
+          unzip -q /tmp/pdfjs.zip -d _site/pdfjs
+          test -f _site/pdfjs/web/viewer.html
+          test -f _site/pdfjs/build/pdf.mjs
+
       - name: Assemble _site
         run: |
-          mkdir -p _site/pdfjs
           cp index.html _site/
           cp Resume_Aaron_Collins.pdf _site/
           cp Resume_Aaron_Collins.docx _site/
-          cp -r node_modules/pdfjs-dist/web   _site/pdfjs/web
-          cp -r node_modules/pdfjs-dist/build _site/pdfjs/build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

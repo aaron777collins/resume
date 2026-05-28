@@ -9,9 +9,6 @@
   "dependencies": {
     "docx": "^9.0.0"
   },
-  "devDependencies": {
-    "pdfjs-dist": "^4.10.38"
-  },
   "author": "Aaron Collins",
   "license": "MIT"
 }
