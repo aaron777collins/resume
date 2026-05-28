@@ -195,7 +195,10 @@ const doc = new Document({
         link("ConnectedDrivingPipelineV4", "https://www.aaroncollins.info/ConnectedDrivingPipelineV4/"),
       ]),
 
-      // ═══ PROJECTS ═══
+      // ═══ PROJECTS (page 2) ═══
+      new Paragraph({
+        children: [new (require("docx").PageBreak)()],
+      }),
       sectionHeading("Projects"),
 
       projectTitleLine("PortableRalph", "Jan 2026 - Present"),
