@@ -295,6 +295,6 @@ const doc = new Document({
 });
 
 Packer.toBuffer(doc).then(buffer => {
-  fs.writeFileSync("/home/claude/Resume_Aaron_Collins.docx", buffer);
+  fs.writeFileSync("Resume_Aaron_Collins.docx", buffer);
   console.log("Done");
 });
