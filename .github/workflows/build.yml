@@ -33,10 +33,15 @@ jobs:
       - name: Build .docx
         run: npm run build
 
-      - name: Install LibreOffice
+      - name: Install LibreOffice + Cambria-compatible fonts
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends libreoffice-writer
+          sudo apt-get install -y --no-install-recommends \
+            libreoffice-writer \
+            fonts-crosextra-caladea \
+            fonts-crosextra-carlito
+          fc-cache -f
+          fc-list | grep -iE 'caladea|carlito' || true
 
       - name: Convert .docx -> .pdf
         run: |
