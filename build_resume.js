@@ -124,7 +124,7 @@ const doc = new Document({
       titleLine("Senior Software Development Engineer"),
       companyDateLine("Criteo", "Ann Arbor, MI", "Apr 2026 - Present"),
       bullet([
-        "Retail Media / Onsite Ads / Activation SME: Drive major re-architecture of ad approval systems to improve configuration flexibility. Own Ads \"Activation\" (",
+        "Retail Media / Onsite Ads / Activation SME: Drive major re-architecture of ad approval systems to improve configuration flexibility. Own Ads Activation (",
         { text: "ad validation and delivery push", bold: true },
         ") pipelines. Collaborate cross-team for ad delivery workflows (C#/.NET 10, Angular)."
       ]),
@@ -141,7 +141,7 @@ const doc = new Document({
       titleLine("Software Development Engineer II"),
       companyDateLine("Criteo", "Ann Arbor, MI", "Oct 2024 - Apr 2026"),
       bullet([
-        "Retail Media / Onsite Ads / Fullstack Engineering Project SME: Led major overhaul of Ads \"Forecasting\" (",
+        "Retail Media / Onsite Ads / Fullstack Engineering Project SME: Led major overhaul of Ads Forecasting (",
         { text: "ad delivery demand prediction", bold: true },
         ") system and built new modules that significantly improved forecast accuracy. Owned pipeline, backend infrastructure, and business requirements implementation. Collaborated cross-team for ad approval workflows (C#/.NET 8-10, Angular)."
       ]),
