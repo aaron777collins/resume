@@ -102,6 +102,13 @@ const doc = new Document({
         children: [new TextRun({ text: "Aaron Collins", bold: true, size: 48, font: FONT })],
       }),
 
+      // ═══ HEADLINE ═══
+      new Paragraph({
+        spacing: { before: 0, after: 20 },
+        alignment: AlignmentType.CENTER,
+        children: [new TextRun({ text: "Senior Software Engineer  |  Retail Media Ad Tech  |  AI Agents & Developer Tooling", size: 22, font: FONT })],
+      }),
+
       // ═══ CONTACT ═══
       new Paragraph({
         spacing: { before: 20, after: 0 },
@@ -124,83 +131,142 @@ const doc = new Document({
       titleLine("Senior Software Development Engineer"),
       companyDateLine("Criteo", "Ann Arbor, MI", "Apr 2026 - Present"),
       bullet([
-        "Retail Media / Onsite Ads / Activation SME: Drive major re-architecture of ad approval systems to improve configuration flexibility. Own Ads Activation (",
-        { text: "ad validation and delivery push", bold: true },
-        ") pipelines. Collaborate cross-team for ad delivery workflows (",
+        { text: "Go-to leader for 2 of my team’s 3 mission-critical systems", bold: true },
+        ", which validate ads and push them into live auctions; ",
+        { text: "trusted by leadership and a team of 9", bold: true },
+        "."
+      ]),
+      bullet([
+        "Launched a new ",
+        { text: "ad diagnostic UI and API", bold: true },
+        " that show advertisers why ads aren’t serving, ",
+        { text: "so issues get fixed faster", bold: true },
+        "; easy for engineers and AI agents to extend (",
         { text: "C#/.NET 10, Angular", bold: true },
         ")."
       ]),
       bullet([
-        "Project SME & Core Contributor to the Ad Diagnostic tool MVP (identifying why configured ads do not serve), designed to significantly reduce troubleshooting time and help advertisers get campaigns live faster."
+        "Named ",
+        { text: "AI Champion for my entire org", bold: true },
+        " by senior leadership after releasing org-wide AI tools (agent harness, reusable AI skills); coach my team and help anyone who asks, ",
+        { text: "driving AI adoption", bold: true },
+        "."
       ]),
       bullet([
-        "Selected as ",
-        { text: "AI Champion", bold: true },
-        " by senior leadership: driving AI adoption, onboarding engineers to AI tooling and workflows, and tracking cross-org AI initiatives. Measured via dedicated OKR."
+        { text: "Shaped a high-priority feature", bold: true },
+        " that pauses non-paying accounts to ",
+        { text: "protect revenue", bold: true },
+        "; ",
+        { text: "my design was adopted", bold: true },
+        " and I’m helping drive delivery."
+      ]),
+      bullet([
+        "Built a snappy ",
+        { text: "Rust", bold: true },
+        " app to ",
+        { text: "manage and auto-purge the code workspaces AI agents spin up", bold: true },
+        ", so they ",
+        { text: "no longer fill developer laptops", bold: true },
+        "; released to all developers."
       ]),
 
       // -- SDE II --
       titleLine("Software Development Engineer II"),
       companyDateLine("Criteo", "Ann Arbor, MI", "Oct 2024 - Apr 2026"),
       bullet([
-        "Retail Media / Onsite Ads / Fullstack Engineering Project SME: Led major overhaul of Ads Forecasting (",
-        { text: "ad delivery demand prediction", bold: true },
-        ") system and built new modules that significantly improved forecast accuracy. Owned pipeline, backend infrastructure, and business requirements implementation. Collaborated cross-team for ad approval workflows (",
+        "Led the project to build a new ",
+        { text: "Ads Forecasting", bold: true },
+        " system (predicting ad delivery demand), ",
+        { text: "owning the pipeline, backend, and business requirements", bold: true },
+        " (",
         { text: "C#/.NET 8-10, Angular", bold: true },
         ")."
       ]),
       bullet([
-        "Owned full project lifecycles from architecture through delivery, driving measurable business impact across cross-domain Onsite Ads initiatives."
+        "Became the ",
+        { text: "go-to expert", bold: true },
+        " for our ",
+        { text: "mission-critical AWS SQS messaging system", bold: true },
+        ", whose pipelines move ",
+        { text: "millions of messages", bold: true },
+        " so approved ad changes reliably reach live auctions."
       ]),
       bullet([
-        "Built ",
+        "Co-built a new ad diagnostic engine to replace a hard-to-maintain validation library; ",
+        { text: "became its sole expert", bold: true },
+        " when the original team moved on."
+      ]),
+      bullet([
+        { text: "Led a team", bold: true },
+        " to build ",
         { text: "ForgeBot", bold: true },
-        ", a Slack-integrated AI coding agent (Anthropic Agent SDK). Engineers interact with it directly in Slack channels to fix bugs, add features, or summarize topics, reducing context-switching overhead."
+        ", a Slack AI coding agent (",
+        { text: "Anthropic Agent SDK", bold: true },
+        ") that fixes bugs, adds features, and summarizes discussions on request, ",
+        { text: "cutting context switching", bold: true },
+        "."
       ]),
       bullet([
         "Developed ",
         { text: "Claude Code Helper", bold: true },
-        ", a CLI harness wrapping Claude Code with experimental agent teams, multi-threaded conversations with thread tracking, pre/post-instruction injection, and post-hook scripting. Accessible via private Slack DM. Boosted developer productivity."
+        ", a Slack-run AI agent-team harness that ",
+        { text: "injects user-written rules", bold: true },
+        " and ships an ",
+        { text: "AI brain based on Andrej Karpathy’s wiki system", bold: true },
+        "."
       ]),
 
       // -- SDE --
       titleLine("Software Development Engineer"),
       companyDateLine("Criteo", "Ann Arbor, MI", "Oct 2023 - Oct 2024"),
       bullet([
-        "Delivered high-value Onsite Display Ads features including UserNotification, Auction BuyType (auction-based bidding for display line items), and Max Scale (multi-creative support, expanded configuration). Drove strong stakeholder engagement (",
+        "Shipped auction-based bidding and multi-creative display ads, ",
+        { text: "giving advertisers new ways to buy and scale campaigns", bold: true },
+        " (",
         { text: "C#/.NET 6-8, Angular", bold: true },
         ")."
       ]),
       bullet([
-        "Resolved critical production bugs with potential for significant financial impact across ad serving systems."
+        "Set up Grafana dashboards, alerting, and operational docs for the mission-critical AWS messaging system I later became the expert on, ",
+        { text: "transforming incident response", bold: true },
+        "."
       ]),
       bullet([
-        "Authored operational documentation, Grafana dashboards, and alerting systems, transforming incident response. Go-to knowledge source for Criteo's async AWS messaging infrastructure."
+        "Fixed critical ad-serving production bugs that risked ",
+        { text: "significant financial impact", bold: true },
+        "."
       ]),
 
       // -- Rocket --
       titleLine("Software Developer Co-op (2x)"),
       companyDateLine("Rocket Innovation Studio", "Windsor, ON", "May - Aug 2021, Jan - May 2022"),
       bullet([
-        "Developed front-end components in Angular 11/AngularJS with full unit test coverage and backend services in .NET Core 3/5/6."
+        "Delivered ",
+        { text: "fully unit-tested", bold: true },
+        " Angular 11/AngularJS components and .NET Core 3/5/6 backend services."
       ]),
 
       // -- TA & Research --
       titleLine("Head Teaching Assistant & Lead Research Assistant"),
       companyDateLine("University of Windsor", "Windsor, ON", "Sep 2021 - Aug 2023"),
       bullet([
-        "Head TA for the Python programming course; also served as TA for one additional course."
+        "Led connected-vehicle ",
+        { text: "ML research", bold: true },
+        ", managing and mentoring a team of research assistants."
       ]),
       bullet([
-        "Led connected/autonomous driving research using machine learning. Managed and mentored a team of research assistants."
-      ]),
-      bullet([
-        "Published cognitive load recognition paper (Sci-Kit Learn, eye-tracking) at ACR\u201923, published by Springer. ",
+        "Published a cognitive load recognition paper (scikit-learn, eye-tracking) at ",
+        { text: "ACR’23 (Springer)", bold: true },
+        ". ",
         link("Cognitive Load Recognition via Eye-Tracking", "https://doi.org/10.1007/978-3-031-33743-7_7"),
       ]),
       bullet([
-        "Built configurable ML pipeline for BSM classification in connected driving (Sci-Kit Learn, TensorFlow, Pandas). ",
+        "Engineered a configurable ML pipeline (scikit-learn, TensorFlow, Pandas) that classifies connected-vehicle safety messages. ",
         link("ConnectedDrivingPipelineV4", "https://www.aaroncollins.info/ConnectedDrivingPipelineV4/"),
+      ]),
+      bullet([
+        { text: "Head TA", bold: true },
+        " for the Python programming course, plus TA for one other course."
       ]),
 
       // ═══ PROJECTS (page 2) ═══
@@ -209,17 +275,23 @@ const doc = new Document({
       }),
       sectionHeading("Projects"),
 
-      projectTitleLine("PortableRalph", "Jan 2026 - Present"),
+      projectTitleLine("Finledger", "2026 - Present"),
       bullet([
-        "Autonomous AI development loop that works in any repo. Cross-platform (Linux, macOS, Windows), 13+ GitHub stars. ",
-        link("GitHub", "https://github.com/aaron777collins/portableralph"),
-        " | ",
-        link("Docs", "https://www.portableralph.com/"),
+        "Building a finance app that detects recurring costs to ",
+        { text: "optimize monthly spending", bold: true },
+        ", with ",
+        { text: "on-device AI", bold: true },
+        " and password-protected iCloud sync; ships to ",
+        { text: "6 platforms from one Flutter codebase", bold: true },
+        ". ",
+        link("Site", "https://www.aaroncollins.info/finledger-site/"),
       ]),
 
-      projectTitleLine("SOPHIE", "2025 - Present"),
+      projectTitleLine("SOPHIE", "2025 - 2026"),
       bullet([
-        "Personal AI life assistant accessible via Slack, Discord, and voice calls. Manages emails, preps tax documents, makes phone calls, and works on side projects autonomously using skills/MCP integrations. ",
+        "Personal AI assistant on Slack, Discord, or phone that ",
+        { text: "works autonomously", bold: true },
+        ": manages email, preps tax documents, makes calls, and builds side projects (MCP, skills). ",
         link("sophie", "https://www.aaroncollins.info/projects/sophie.html"),
         " | ",
         link("sophie-mcp", "https://www.aaroncollins.info/projects/sophie-mcp.html"),
@@ -227,9 +299,33 @@ const doc = new Document({
         link("sophie-voice-bridge", "https://www.aaroncollins.info/projects/sophie-voice-bridge.html"),
       ]),
 
-      projectTitleLine("Minecraft Datapack Language (MDL)", "2024 - Present"),
+      projectTitleLine("PortableRalph", "2026"),
       bullet([
-        "Compiler and programming language for Minecraft datapacks with if/else, loops, and variables. Published on PyPI with a VS Code extension. ",
+        "Open-source autonomous AI coding loop for any repo on Linux, macOS, and Windows; ",
+        { text: "13+ GitHub stars", bold: true },
+        ". ",
+        link("GitHub", "https://github.com/aaron777collins/portableralph"),
+        " | ",
+        link("Docs", "https://www.portableralph.com/"),
+      ]),
+
+      projectTitleLine("ZeroTier-GUI-Arch", "2024 - 2025"),
+      bullet([
+        "Ported and improved ZeroTier-GUI for Steam Deck and Arch Linux, ",
+        { text: "making private networking easy for non-technical users", bold: true },
+        "; ",
+        { text: "41+ GitHub stars", bold: true },
+        ", released via Flatpak. ",
+        link("GitHub", "https://github.com/aaron777collins/ZeroTier-GUI-Arch"),
+        " | ",
+        link("Docs", "https://www.aaroncollins.info/projects/ZeroTier-GUI-Arch.html"),
+      ]),
+
+      projectTitleLine("Minecraft Datapack Language (MDL)", "2025"),
+      bullet([
+        "Programming language and compiler that brings if/else, loops, and variables to Minecraft datapacks; ",
+        { text: "published on PyPI", bold: true },
+        " with a VS Code extension. ",
         link("GitHub", "https://github.com/aaron777collins/MinecraftDatapackLanguage"),
         " | ",
         link("Docs", "https://www.aaroncollins.info/MinecraftDatapackLanguage/"),
@@ -237,18 +333,10 @@ const doc = new Document({
 
       projectTitleLine("Control Windows", "Jun 2020 - Jan 2023"),
       bullet([
-        "Desktop automation tool using Python and PyAutoGUI with auto-code generation capabilities. ",
+        "Desktop automation tool (Python, PyAutoGUI) that auto-generates automation code. ",
         link("GitHub", "https://github.com/aaron777collins/Control-Windows"),
         " | ",
         link("Docs", "https://www.aaroncollins.info/projects/Control-Windows.html"),
-      ]),
-
-      projectTitleLine("ZeroTier-GUI-Arch", "2023 - Present"),
-      bullet([
-        "ZeroTier GUI client for Arch Linux / Steam Deck. 41+ GitHub stars, popular in the Steam Deck community with active releases via Flatpak. ",
-        link("GitHub", "https://github.com/aaron777collins/ZeroTier-GUI-Arch"),
-        " | ",
-        link("Docs", "https://www.aaroncollins.info/projects/ZeroTier-GUI-Arch.html"),
       ]),
 
       new Paragraph({
@@ -284,19 +372,23 @@ const doc = new Document({
 
       bullet([
         { text: "Languages: ", bold: true },
-        "C#, Python, Java, TypeScript, JavaScript, C, R, SQL, Bash"
+        "C#, Python, TypeScript, JavaScript, Rust, Java, C, R, SQL, Bash"
+      ]),
+      bullet([
+        { text: "AI & ML: ", bold: true },
+        "AI agents, multi-agent orchestration, Anthropic Agent SDK, Claude Code, MCP, Cursor, AMP, Ollama, TensorFlow, scikit-learn, Pandas, NumPy"
+      ]),
+      bullet([
+        { text: "Ad Tech: ", bold: true },
+        "Retail media, onsite display ads, real-time ad auctions, ad validation, ad delivery forecasting"
       ]),
       bullet([
         { text: "Frameworks & Web: ", bold: true },
         ".NET (Core 3-10), Angular, React, Flask, Node.js, HTML, CSS/SCSS"
       ]),
       bullet([
-        { text: "AI & ML: ", bold: true },
-        "Anthropic Agent SDK, Claude Code, AMP, Cursor, MCP, Ollama, TensorFlow, Sci-Kit Learn, Pandas, NumPy"
-      ]),
-      bullet([
         { text: "Infrastructure & DevOps: ", bold: true },
-        "Docker, AWS (SQS, Lambda, ECS), Jenkins, Grafana, Kibana, NGINX, Caddy, Authelia (SSO), CI/CD"
+        "AWS (SQS, Lambda, ECS), ScyllaDB, Docker, Jenkins, Grafana, Kibana, NGINX, Caddy, Authelia (SSO), CI/CD"
       ]),
     ],
   }],
