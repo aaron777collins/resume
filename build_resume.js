@@ -137,12 +137,11 @@ const doc = new Document({
         "."
       ]),
       bullet([
-        "Launched a new ",
-        { text: "ad diagnostic UI and API", bold: true },
-        " that show advertisers why ads aren’t serving, ",
+        { text: "Lead Servability", bold: true },
+        ", the ad diagnostic engine that explains to advertisers why ads aren’t serving, ",
         { text: "so issues get fixed faster", bold: true },
-        "; easy for engineers and AI agents to extend (",
-        { text: "C#/.NET 10, Angular", bold: true },
+        "; designed so engineers and AI agents can easily extend it (",
+        { text: "C#/.NET 10", bold: true },
         ")."
       ]),
       bullet([
@@ -197,16 +196,6 @@ const doc = new Document({
         " when the original team moved on."
       ]),
       bullet([
-        { text: "Led a team", bold: true },
-        " to build ",
-        { text: "ForgeBot", bold: true },
-        ", a Slack AI coding agent (",
-        { text: "Anthropic Agent SDK", bold: true },
-        ") that fixes bugs, adds features, and summarizes discussions on request, ",
-        { text: "cutting context switching", bold: true },
-        "."
-      ]),
-      bullet([
         "Developed ",
         { text: "Claude Code Helper", bold: true },
         ", a Slack-run AI agent-team harness that ",
@@ -214,6 +203,13 @@ const doc = new Document({
         " and ships an ",
         { text: "AI brain based on Andrej Karpathy’s wiki system", bold: true },
         "."
+      ]),
+      bullet([
+        "Led a hackathon team to build ",
+        { text: "ForgeBot", bold: true },
+        ", a Slack AI coding agent (",
+        { text: "Anthropic Agent SDK", bold: true },
+        ") that fixes bugs, adds features, and summarizes discussions on request."
       ]),
 
       // -- SDE --
