@@ -153,7 +153,7 @@ const doc = new Document({
         " that explains why ads aren\u2019t serving, ",
         { text: "so issues get fixed faster", bold: true },
         "; expanding it to screen ads before retailer review and to ",
-        { text: "decide which ads reach live delivery", bold: true },
+        { text: "decide which ads make it to delivery", bold: true },
         ", replacing a legacy library."
       ]),
       bullet([
