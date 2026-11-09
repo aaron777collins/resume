@@ -131,12 +131,10 @@ const doc = new Document({
       titleLine("Senior Software Development Engineer"),
       companyDateLine("Criteo", "Ann Arbor, MI", "Apr 2026 - Present"),
       bullet([
-        { text: "Go-to leader for 2 of my team\u2019s 3 mission-critical ad delivery systems", bold: true },
-        ", including ",
-        { text: "Hermes", bold: true },
-        ", which moves ",
+        { text: "Go-to leader for mission-critical ad delivery systems", bold: true },
+        " processing ",
         { text: "millions of messages", bold: true },
-        " (AWS SQS) so approved ads reliably reach live auctions."
+        ", carrying ad changes into live auctions and onto ad placements (AWS SQS)."
       ]),
       bullet([
         "Named ",
@@ -178,7 +176,9 @@ const doc = new Document({
       bullet([
         "Developed ",
         { text: "Claude Code Helper", bold: true },
-        ", a Slack-run AI agent-team harness that ",
+        ", a ",
+        { text: "Slack-run AI agent-team harness", bold: true },
+        " that ",
         { text: "injects user-written rules", bold: true },
         " and ships an ",
         { text: "AI brain based on Andrej Karpathy\u2019s wiki system", bold: true },
