@@ -131,18 +131,12 @@ const doc = new Document({
       titleLine("Senior Software Development Engineer"),
       companyDateLine("Criteo", "Ann Arbor, MI", "Apr 2026 - Present"),
       bullet([
-        { text: "Go-to leader for 2 of my team’s 3 mission-critical systems", bold: true },
-        ", which validate ads and push them into live auctions; ",
-        { text: "trusted by leadership and a team of 9", bold: true },
-        "."
-      ]),
-      bullet([
-        { text: "Lead Servability", bold: true },
-        ", the ad diagnostic engine that explains to advertisers why ads aren’t serving, ",
-        { text: "so issues get fixed faster", bold: true },
-        "; designed so engineers and AI agents can easily extend it (",
-        { text: "C#/.NET 10", bold: true },
-        ")."
+        { text: "Go-to leader for 2 of my team\u2019s 3 mission-critical ad delivery systems", bold: true },
+        ", including ",
+        { text: "Hermes", bold: true },
+        ", which moves ",
+        { text: "millions of messages", bold: true },
+        " (AWS SQS) so approved ads reliably reach live auctions."
       ]),
       bullet([
         "Named ",
@@ -152,12 +146,21 @@ const doc = new Document({
         "."
       ]),
       bullet([
-        { text: "Shaped a high-priority feature", bold: true },
-        " that pauses non-paying accounts to ",
-        { text: "protect revenue", bold: true },
-        "; ",
-        { text: "my design was adopted", bold: true },
-        " and I’m helping drive delivery."
+        "Co-created and now lead ",
+        { text: "Servability", bold: true },
+        ", our ",
+        { text: "ad diagnostic (ad debug) engine", bold: true },
+        ", which shows advertisers why ads aren\u2019t serving and checks ads before retailer review, ",
+        { text: "so issues get fixed faster", bold: true },
+        " (",
+        { text: "C#/.NET 10", bold: true },
+        ")."
+      ]),
+      bullet([
+        { text: "Designed a high-priority feature", bold: true },
+        " that pauses non-paying accounts, ",
+        { text: "protecting revenue across 1,400+ clients ($80M+)", bold: true },
+        "; my design was adopted and I\u2019m helping drive delivery."
       ]),
       bullet([
         "Built a snappy ",
@@ -173,6 +176,15 @@ const doc = new Document({
       titleLine("Software Development Engineer II"),
       companyDateLine("Criteo", "Ann Arbor, MI", "Oct 2024 - Apr 2026"),
       bullet([
+        "Developed ",
+        { text: "Claude Code Helper", bold: true },
+        ", a Slack-run AI agent-team harness that ",
+        { text: "injects user-written rules", bold: true },
+        " and ships an ",
+        { text: "AI brain based on Andrej Karpathy\u2019s wiki system", bold: true },
+        "."
+      ]),
+      bullet([
         "Led the project to build a new ",
         { text: "Ads Forecasting", bold: true },
         " system (predicting ad delivery demand), ",
@@ -180,29 +192,6 @@ const doc = new Document({
         " (",
         { text: "C#/.NET 8-10, Angular", bold: true },
         ")."
-      ]),
-      bullet([
-        "Became the ",
-        { text: "go-to expert", bold: true },
-        " for our ",
-        { text: "mission-critical AWS SQS messaging system", bold: true },
-        ", whose pipelines move ",
-        { text: "millions of messages", bold: true },
-        " so approved ad changes reliably reach live auctions."
-      ]),
-      bullet([
-        "Co-built a new ad diagnostic engine to replace a hard-to-maintain validation library; ",
-        { text: "became its sole expert", bold: true },
-        " when the original team moved on."
-      ]),
-      bullet([
-        "Developed ",
-        { text: "Claude Code Helper", bold: true },
-        ", a Slack-run AI agent-team harness that ",
-        { text: "injects user-written rules", bold: true },
-        " and ships an ",
-        { text: "AI brain based on Andrej Karpathy’s wiki system", bold: true },
-        "."
       ]),
       bullet([
         "Led a hackathon team to build ",
@@ -223,7 +212,7 @@ const doc = new Document({
         ")."
       ]),
       bullet([
-        "Set up Grafana dashboards, alerting, and operational docs for the mission-critical AWS messaging system I later became the expert on, ",
+        "Set up Grafana dashboards, alerting, and operational docs for Hermes, the mission-critical AWS messaging system I later became the go-to leader for, ",
         { text: "transforming incident response", bold: true },
         "."
       ]),
