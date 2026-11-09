@@ -133,7 +133,7 @@ const doc = new Document({
       bullet([
         { text: "Go-to leader for mission-critical ad delivery systems", bold: true },
         " processing ",
-        { text: "3,000+ messages per second", bold: true },
+        { text: "2,800+ messages per second", bold: true },
         ", carrying ad changes into live auctions and onto ad placements (AWS SQS)."
       ]),
       bullet([
