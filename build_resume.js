@@ -159,7 +159,7 @@ const doc = new Document({
       bullet([
         { text: "Designed a high-priority feature", bold: true },
         " that pauses non-paying accounts, ",
-        { text: "protecting revenue across 1,400+ clients ($80M+)", bold: true },
+        { text: "targeting $80M+ in overdue balances across 1,400+ clients", bold: true },
         "; my design was adopted and I\u2019m helping drive delivery."
       ]),
       bullet([
