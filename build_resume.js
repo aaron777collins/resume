@@ -150,11 +150,11 @@ const doc = new Document({
         { text: "Servability", bold: true },
         ", our ",
         { text: "ad diagnostic (ad debug) engine", bold: true },
-        ", which shows advertisers why ads aren\u2019t serving and checks ads before retailer review, ",
+        " that explains why ads aren\u2019t serving, ",
         { text: "so issues get fixed faster", bold: true },
-        " (",
-        { text: "C#/.NET 10", bold: true },
-        ")."
+        "; expanding it to screen ads before retailer review and to ",
+        { text: "decide which ads reach live delivery", bold: true },
+        ", replacing a legacy library."
       ]),
       bullet([
         { text: "Designed a high-priority feature", bold: true },
