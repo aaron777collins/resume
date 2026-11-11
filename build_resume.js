@@ -131,10 +131,12 @@ const doc = new Document({
       titleLine("Senior Software Development Engineer"),
       companyDateLine("Criteo", "Ann Arbor, MI", "Apr 2026 - Present"),
       bullet([
-        { text: "Go-to leader for mission-critical ad delivery systems", bold: true },
+        { text: "Go-to leader for mission-critical ad systems", bold: true },
         " processing ",
-        { text: "2,800+ messages per second", bold: true },
-        ", carrying ad changes into live auctions and onto ad placements (AWS SQS)."
+        { text: "240M+ messages a day", bold: true },
+        " that feed ad changes into live auctions and the ",
+        { text: "ad delivery system", bold: true },
+        " (AWS SQS)."
       ]),
       bullet([
         "Named ",
